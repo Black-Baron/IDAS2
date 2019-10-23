@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB5ACF1F-9D52-0A65-FBBC-79D6056031C3" name="STUDIJNI_PLANY">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>BB8F72B6-8637-582C-38C6-A09FA2B342EB</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="FCA1372D-4556-82E8-21C3-6BD1BB5AB088">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>C70622E9-2728-8FA1-2F8C-FF69B0144A2C</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAZEV" id="161163A7-A177-045E-5DE0-8581A40A0C5B">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>5BCA9FAF-F5CD-81AA-12F3-026692EA390C</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POPIS" id="D4ED0188-3625-7D17-B41A-C7CA330C01D9">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>6AC3D629-4DC1-AB69-C97B-2F8C17756C8A</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_STUDIJNI_OBORY" id="5948BADF-2CD1-F3DA-5E0C-59A0E8318963">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>00CAC3B8-A5C1-EA20-74F7-F9D0EB0593E7</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="992710D6-1B85-7378-8622-FBF675590D93" referredColumn="F549B67D-D1CE-1581-CB66-68A3A8DF6DE3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A004CC15-8693-658B-0048-2F703BB82630" name="STUDIJNI_PLANY_PK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>FC821DE5-DA92-4235-337C-A7C921602391</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCA1372D-4556-82E8-21C3-6BD1BB5AB088"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3A6488E4-0D01-FEF5-7781-F081AE6FA04A" name="STUDIJNI_PLANY_STUDIJNI_OBORY_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>89BD6F81-4949-DD50-C437-F4AD80965A9F</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5948BADF-2CD1-F3DA-5E0C-59A0E8318963"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

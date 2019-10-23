@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B73A5051-BFE9-AD06-2D34-BCC351D41104" name="PREDMETY">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-03-25 13:33:48 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="C8F8BB67-A211-076B-EFB8-32527B9869FC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="FC862A2B-2794-BFE9-1049-CEF8C1C69FE1">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-03-25 13:33:48 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<importedID>2F2783F9-A298-4A42-E88E-73F32E37CCFE</importedID>
+<engineerTo>
+<item key="C8F8BB67-A211-076B-EFB8-32527B9869FC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAZEV" id="38F1DD17-C2E7-4C06-2B7B-B5BC9170C4BE">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-03-25 13:33:48 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<importedID>D2E8733A-CD8F-8E9A-D5DD-1CD0BA7BFA4A</importedID>
+<engineerTo>
+<item key="C8F8BB67-A211-076B-EFB8-32527B9869FC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ZKRATKA" id="0DE28EA9-054D-F918-2D8D-4B4F21DF11FE">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:40:59 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="C8F8BB67-A211-076B-EFB8-32527B9869FC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="POPIS" id="9671953E-260D-452C-3683-9D8FA35DCF20">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-03-25 13:33:48 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<importedID>24C27254-08E2-A560-A74C-EC31A0D6499A</importedID>
+<engineerTo>
+<item key="C8F8BB67-A211-076B-EFB8-32527B9869FC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300</dataTypeSize>
+<ownDataTypeParameters>300,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="138A580A-08BA-B303-058D-F604DF477038" name="Predmety PK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-03-25 13:33:48 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C8F8BB67-A211-076B-EFB8-32527B9869FC" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FC862A2B-2794-BFE9-1049-CEF8C1C69FE1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

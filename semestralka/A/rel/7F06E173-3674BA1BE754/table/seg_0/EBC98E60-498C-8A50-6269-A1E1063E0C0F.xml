@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EBC98E60-498C-8A50-6269-A1E1063E0C0F" name="UZIVATELE">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>003C2978-FA5D-F2BB-B608-0D9C86161F23</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B3CC5444-86DC-D5F9-C7D7-2CBD803534A7">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>DD0D5800-D669-6142-C004-D25FBD8FCE64</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JMENO" id="E5EC2F38-D189-F4CF-05A6-64841C5D5269">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>7729EA59-D42E-1042-BE1C-1430B7EA8445</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIJMENI" id="A84A31BD-1C4F-6A03-4330-F54DB8FF77C6">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>B355B858-3FA1-9976-F101-BFBED810F50E</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROK_STUDIA" id="B520E7B1-0227-6056-62BA-A1AB13A7BE2D">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>261AFC69-A637-E641-C5F8-82CAD849B409</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRACOVISTE" id="C109D758-DDCC-9468-047D-EA493E26FFA4">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>2F4A008D-4785-49EB-819B-223A106E6C65</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FAKULTA" id="28D0AFF0-30A9-8C6E-4D5F-D8A72A8C770C">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>E614AE39-A735-032D-E958-CCE1BF65E675</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HESLO" id="7FD4E5AA-4219-292D-CB64-463827017425">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>C7B204A8-E20F-18E9-2A15-6CE2D0BF9FEF</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELEFON" id="FB431B37-C04A-8124-A695-3D16274E1531">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 16:09:11 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="6BF46C91-FFBB-6F6F-FBDF-CFC0843C05A6">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 16:09:11 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CB673168-A755-42F9-2969-8963E5920F6E" name="UZIVATELE_PK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>56AF6E97-094B-D4FB-FBEA-7B458A492A5E</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3CC5444-86DC-D5F9-C7D7-2CBD803534A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

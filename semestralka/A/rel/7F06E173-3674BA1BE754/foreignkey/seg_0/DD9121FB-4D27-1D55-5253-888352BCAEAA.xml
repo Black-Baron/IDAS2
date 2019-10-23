@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DD9121FB-4D27-1D55-5253-888352BCAEAA" containerWithKeyObject="034580F8-9723-2DD4-8576-2084B1687401" localFKIndex="48C4CEA4-BCB4-7DD0-B49E-7FA70D605FB1" name="PREDMETY_PLANU_SKUPINY_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>8661A2CD-FB2B-567C-D627-E2635B0218C5</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<referredTableLongName>SKUPINY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>959AE639-C5D8-A0D6-4E2D-7DAB9288598E</referredTableID>
+<keyObject>A0C01098-BD6B-A58B-402C-B1882C05680A</keyObject>
+<referredKeyID>A0C01098-BD6B-A58B-402C-B1882C05680A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

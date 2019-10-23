@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6C4166EA-E9D4-020B-DE9C-D077C4576D3E" name="ZPRAVY_S_KAMARADY">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>6F522F12-8B67-DB32-6084-E00EA2745D1E</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ZPRAVY" id="DEB8EC71-BDF8-ED5A-BC29-0C3060207F5B">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>BA0EB3CF-D0DE-3FD4-04B5-AE9FA26CF8E6</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F4F4CA42-36A8-3C07-B4DE-570C4F6E041E" referredColumn="576A612C-839A-0855-DDC9-3696F3243AE8"/>
+</associations>
+</Column>
+<Column name="ID_KAMARADI" id="C0CA866B-9467-90B3-76FD-9ED6DA659B9F">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>36A792B2-C5B3-8CF1-195A-FA3EF78F86B2</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F987D59E-D341-CDA7-FC64-AF57FD52193F" referredColumn="43D60667-AB70-EA13-3064-27C47E6A6A2E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="05CA7CED-49AF-B039-0264-40F7695A19EA" name="ZPRAVY_S_KAMARADY_PK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>3228F174-7B4E-CE80-DCD8-EF7121FFC632</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0CA866B-9467-90B3-76FD-9ED6DA659B9F"/>
+<colUsage columnID="DEB8EC71-BDF8-ED5A-BC29-0C3060207F5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D95E151-4547-FAD9-1C42-B06AA4B037CB" name="ZPRAVY_S_KAMARADY_ZPRAVY_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>D5FD2666-B9C6-F26A-BAAC-DD3192A37B36</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DEB8EC71-BDF8-ED5A-BC29-0C3060207F5B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5232D691-E35C-4432-0FE4-BD41F036058C" name="ZPRAVY_S_KAMARADY_KAMARADI_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>73D55B2C-DF06-75CC-A51F-15D3CC24FF28</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0CA866B-9467-90B3-76FD-9ED6DA659B9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

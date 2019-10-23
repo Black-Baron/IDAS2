@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8F843773-B534-0765-44CE-6832F43A5635" containerWithKeyObject="D4DCA083-F5BB-70E9-CD4F-ED896C8252CE" localFKIndex="D3999938-6A5E-BC03-E094-D8B48C74BD2A" name="LAJKY_UZIVATELE_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 16:18:21 UTC</createdTime>
+<generatorID>56AF6E97-094B-D4FB-FBEA-7B458A492A5E</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<referredTableLongName>UZIVATELE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EBC98E60-498C-8A50-6269-A1E1063E0C0F</referredTableID>
+<keyObject>CB673168-A755-42F9-2969-8963E5920F6E</keyObject>
+<referredKeyID>CB673168-A755-42F9-2969-8963E5920F6E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

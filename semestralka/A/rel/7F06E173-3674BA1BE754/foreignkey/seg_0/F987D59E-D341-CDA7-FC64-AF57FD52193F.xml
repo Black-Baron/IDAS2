@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F987D59E-D341-CDA7-FC64-AF57FD52193F" containerWithKeyObject="6C4166EA-E9D4-020B-DE9C-D077C4576D3E" localFKIndex="5232D691-E35C-4432-0FE4-BD41F036058C" name="ZPRAVY_S_KAMARADY_KAMARADI_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>73D55B2C-DF06-75CC-A51F-15D3CC24FF28</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<referredTableLongName>KAMARADI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2F63FDDE-32D0-DF4E-5C3C-21270A666103</referredTableID>
+<keyObject>BFFADB72-B6FF-A4E5-D190-2A5A7E147773</keyObject>
+<referredKeyID>BFFADB72-B6FF-A4E5-D190-2A5A7E147773</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

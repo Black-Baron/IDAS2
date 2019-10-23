@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2A30B0D2-278C-068C-0F92-F43C9DE66D34" containerWithKeyObject="C2A42A5C-A9E1-FEA3-E351-3E99ECECC9EA" localFKIndex="615EEFF6-C477-3548-12A0-9A2469D3A8B7" name="SKUPINY_UZIVATELE_SKUPINY_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 16:19:51 UTC</createdTime>
+<generatorID>29AC24E6-583C-B71F-CA28-B501D95D1EA5</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<referredTableLongName>SKUPINY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>959AE639-C5D8-A0D6-4E2D-7DAB9288598E</referredTableID>
+<keyObject>A0C01098-BD6B-A58B-402C-B1882C05680A</keyObject>
+<referredKeyID>A0C01098-BD6B-A58B-402C-B1882C05680A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

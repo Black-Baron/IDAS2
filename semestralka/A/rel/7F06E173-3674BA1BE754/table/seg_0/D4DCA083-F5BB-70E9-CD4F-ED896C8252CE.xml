@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4DCA083-F5BB-70E9-CD4F-ED896C8252CE" name="LAJKY">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>6D0F9DEC-24E5-5384-7B16-7BCE7C657557</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<ordsAlias>like</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="5A22ED66-C2B4-F35F-4231-1B5C9064879C">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>82FBCB04-71D8-CD9E-4D34-E3031D4FA682</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_KOMENTARE" id="1AE84A47-9671-A80F-C6A8-6849B4621054">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>6C67A964-2565-4725-AC14-85F11D8E36AD</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7A9B7955-6C7C-3243-05F4-F4D185984222" referredColumn="EA28FCFE-AA50-6614-73D7-32775BA61F70"/>
+</associations>
+</Column>
+<Column name="ID_UZIVATELE" id="75F1C7B4-06FA-AF91-F26E-213278B42E72">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 16:18:21 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8F843773-B534-0765-44CE-6832F43A5635" referredColumn="B3CC5444-86DC-D5F9-C7D7-2CBD803534A7"/>
+</associations>
+</Column>
+<Column name="ID_KATEGORIE" id="99B690F7-D5C9-738E-41E0-C973C0C9CDEB">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 13:07:25 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="264401E5-F06F-5EE9-911D-BD67BCEE55AA" referredColumn="B788F7C1-8BC4-9F7E-B94C-F25C2CEB9DE7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="41A77E60-2F82-9117-78C4-2C493DA2A4BF" name="LAJKY_PK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>B70E396C-96D5-BFC9-7945-A3C74196E1EE</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A22ED66-C2B4-F35F-4231-1B5C9064879C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA64C6B3-6923-A0C0-BCD9-070A603CC5FB" name="LAJKY_KOMENTARE_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>64994EC7-4BD8-4414-5D43-611DC8B913B5</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AE84A47-9671-A80F-C6A8-6849B4621054"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D3999938-6A5E-BC03-E094-D8B48C74BD2A" name="LAJKY_UZIVATELE_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 16:18:21 UTC</createdTime>
+<generatorID>56AF6E97-094B-D4FB-FBEA-7B458A492A5E</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75F1C7B4-06FA-AF91-F26E-213278B42E72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46DA1DC9-1933-867C-3E05-BFB1DDCA3E7C" name="LAJKY_KATEGORIE_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 13:07:25 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99B690F7-D5C9-738E-41E0-C973C0C9CDEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

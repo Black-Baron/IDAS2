@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7405480D-86A0-2EBB-21B1-47B8CBE5BA03" name="KOMENTARE">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-01 14:35:39 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="C8F8BB67-A211-076B-EFB8-32527B9869FC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="7F801D75-5619-9E8B-5656-583211ED93F8">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-02 09:18:53 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="C8F8BB67-A211-076B-EFB8-32527B9869FC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_PREDCHOZI" id="DFA698AE-8E9D-4A28-39FD-D225D2999B04">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 09:46:26 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="C8F8BB67-A211-076B-EFB8-32527B9869FC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OBSAH" id="76A25C6D-7D25-0E4C-A58E-CAA6752B5F25">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-02 09:19:02 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="C8F8BB67-A211-076B-EFB8-32527B9869FC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAS" id="D3932016-B512-A793-63E6-74AA99D54E33">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-02 09:28:37 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="C8F8BB67-A211-076B-EFB8-32527B9869FC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="87A897E1-92D3-87EE-9B5E-7FBB04EF782E">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-03 08:07:34 UTC</createdTime>
+<generatorID>DEDC078A-ECEB-241E-F60E-D6D50FE67B5B</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="C8F8BB67-A211-076B-EFB8-32527B9869FC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7F801D75-5619-9E8B-5656-583211ED93F8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID2" id="578AC00E-D5E3-7049-94C1-E1509D65672A">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 09:47:50 UTC</createdTime>
+<generatorID>F1DA891C-5C82-C3B1-6F4C-2260735FF930</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="C8F8BB67-A211-076B-EFB8-32527B9869FC" value="true"/>
+</engineerTo>
+<referedAttribute>8262D7BC-5EF7-CC21-6CDB-74EA74537C8F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5B878609-74B9-195F-142D-ED888AD4A539" name="komentare PK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-02 09:19:01 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C8F8BB67-A211-076B-EFB8-32527B9869FC" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7F801D75-5619-9E8B-5656-583211ED93F8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

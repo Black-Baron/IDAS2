@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="2E6441A0-15B2-22CA-350A-3C26F255EE60" mainViewID="74649843-75BE-007C-5B3D-8C51884FB0BA">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-03-25 13:10:21 UTC</createdTime>
+<ownerDesignName>Semestralka_logicky_model</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F63FDDE-32D0-DF4E-5C3C-21270A666103" name="KAMARADI">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>D96C28FC-38A0-76DD-DE80-FC9C19EDFE3D</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="43D60667-AB70-EA13-3064-27C47E6A6A2E">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>9E9595F3-7207-51A4-4883-D311B03B96BF</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AKTIVNI" id="B109D502-D139-210B-0AD0-0357F9B48257">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>513C5D22-2289-6E47-0FAE-1BF05A1F2258</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_UZIVATELE" id="B1D76255-E30A-74E1-C56D-D5FEEAA41B8C">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>55100AEA-2CB5-0611-1B33-B86F9D8BE5D7</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D0EC952-952E-222A-698A-9A2465F28FC6" referredColumn="B3CC5444-86DC-D5F9-C7D7-2CBD803534A7"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BFFADB72-B6FF-A4E5-D190-2A5A7E147773" name="KAMARADI_PK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>7001170C-AF3F-0E89-68C3-2CDE17D80B21</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43D60667-AB70-EA13-3064-27C47E6A6A2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ABA680CE-2AE5-5F0F-E1CE-8593A5EF3E7E" name="KAMARADI_UZIVATELE_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>C8EF6BC5-CE14-9D57-1E55-16356111F6EF</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1D76255-E30A-74E1-C56D-D5FEEAA41B8C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

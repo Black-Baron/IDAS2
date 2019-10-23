@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D96C28FC-38A0-76DD-DE80-FC9C19EDFE3D" name="KAMARADI">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-02 09:12:46 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="9E9595F3-7207-51A4-4883-D311B03B96BF">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-02 09:13:02 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AKTIVNI" id="513C5D22-2289-6E47-0FAE-1BF05A1F2258">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-03 08:06:48 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="55100AEA-2CB5-0611-1B33-B86F9D8BE5D7">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-03 08:09:00 UTC</createdTime>
+<generatorID>C8EF6BC5-CE14-9D57-1E55-16356111F6EF</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<referedAttribute>DD0D5800-D669-6142-C004-D25FBD8FCE64</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7001170C-AF3F-0E89-68C3-2CDE17D80B21" name="FRIENDSLIST PK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-02 09:13:09 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9E9595F3-7207-51A4-4883-D311B03B96BF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

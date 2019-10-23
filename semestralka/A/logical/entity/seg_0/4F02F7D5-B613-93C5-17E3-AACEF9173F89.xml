@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4F02F7D5-B613-93C5-17E3-AACEF9173F89" name="ROLE_UZIVATELE">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 16:19:45 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="FA0D1622-9047-6A9E-C623-1E9C5B87D2DA">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 16:19:55 UTC</createdTime>
+<generatorID>AC84498D-8426-DDF4-7C4E-F11D18681DC1</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<referedAttribute>46F4B22C-C74C-19F1-F013-BCED85D0B68D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="356EE3FA-2DA5-A709-9702-C96D635C0E69">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 16:19:59 UTC</createdTime>
+<generatorID>7B1B027A-A1CF-6EA2-03A2-7AC9A15D5366</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<referedAttribute>DD0D5800-D669-6142-C004-D25FBD8FCE64</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

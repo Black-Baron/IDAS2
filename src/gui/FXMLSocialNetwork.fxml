@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="733.0" prefWidth="1118.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLSocialNetworkController">
+    <children>
+      <TabPane layoutY="26.0" prefHeight="714.0" prefWidth="1116.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Skupiny">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="672.0" prefWidth="1116.0">
+                     <children>
+                        <Button fx:id="buttonPridejKomentar" layoutX="846.0" layoutY="424.0" onAction="#PridejKomentar" text="Přidej komentář" AnchorPane.bottomAnchor="236.0" AnchorPane.rightAnchor="169.0" />
+                        <TextField fx:id="textFieldKomentar" layoutX="851.0" layoutY="380.0" prefHeight="25.0" prefWidth="250.0" AnchorPane.bottomAnchor="280.0" AnchorPane.rightAnchor="15.0" />
+                        <TableView fx:id="tableViewSkupina" layoutX="2.0" layoutY="30.0" prefHeight="274.0" prefWidth="1116.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                          <columns>
+                            <TableColumn fx:id="colSkupinaId" minWidth="0.0" prefWidth="0.0" text="ID" />
+                            <TableColumn fx:id="colSkupinaNazev" prefWidth="215.0" text="Název" />
+                              <TableColumn fx:id="colSkupinaRole" minWidth="0.0" prefWidth="74.0" text="Role" />
+                              <TableColumn fx:id="colSkupinaPredmet" prefWidth="187.0" text="Předmět" />
+                              <TableColumn fx:id="colSkupinaStudijniPlan" prefWidth="299.0" text="Studijní plán" />
+                              <TableColumn fx:id="colSkupinaStudijniObor" prefWidth="339.0" text="Studijní obor" />
+                          </columns>
+                        </TableView>
+                        <TableView fx:id="tableViewKomentare" layoutX="1.0" layoutY="334.0" prefHeight="193.0" prefWidth="827.0" AnchorPane.bottomAnchor="158.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="289.0">
+                          <columns>
+                            <TableColumn fx:id="colKomentarId" prefWidth="28.0" text="ID" />
+                            <TableColumn fx:id="colKomentarCas" prefWidth="162.0" text="Přidáno" />
+                              <TableColumn fx:id="colKomentarUzivatel" prefWidth="165.0" text="Uživatelem" />
+                              <TableColumn fx:id="colKomentarOdpoved" prefWidth="84.0" text="Odpověď na" />
+                              <TableColumn fx:id="colKomentarObsah" prefWidth="384.0" text="Obsah" />
+                          </columns>
+                        </TableView>
+                        <TableView fx:id="tableViewLajky" layoutX="1.0" layoutY="554.0" prefHeight="131.0" prefWidth="827.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="289.0">
+                          <columns>
+                            <TableColumn fx:id="colLajkyId" prefWidth="32.5" text="ID" />
+                            <TableColumn fx:id="colLajkyUzivatel" prefWidth="143.0" text="Uživatel" />
+                              <TableColumn fx:id="colLajkyKategorie" prefWidth="87.0" text="Kategorie" />
+                              <TableColumn fx:id="colLajkyKomentar" prefWidth="131.0" text="Na komentář" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="buttonPridejLajk" layoutX="847.0" layoutY="643.0" mnemonicParsing="false" onAction="#PridejLajk" text="Dej like" AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="214.0" />
+                        <ComboBox fx:id="comboBoxLajk" layoutX="851.0" layoutY="602.0" prefHeight="25.0" prefWidth="242.0" AnchorPane.bottomAnchor="58.0" AnchorPane.rightAnchor="23.0" />
+                        <TextField fx:id="textFieldSkupinaId" editable="false" layoutX="849.0" layoutY="59.0" prefHeight="25.0" prefWidth="37.0" visible="false" />
+                        <TextField fx:id="textFieldSkupinaNazev" layoutX="904.0" layoutY="59.0" prefHeight="25.0" prefWidth="201.0" visible="false" />
+                        <ComboBox fx:id="comboBoxSkupinaRole" layoutX="849.0" layoutY="113.0" prefHeight="25.0" prefWidth="103.0" visible="false" />
+                        <ComboBox fx:id="comboBoxSkupinaPredmet" layoutX="972.0" layoutY="113.0" prefHeight="25.0" prefWidth="128.0" visible="false" />
+                        <ComboBox fx:id="comboBoxSkupinaStPlan" layoutX="848.0" layoutY="136.0" prefHeight="25.0" prefWidth="250.0" visible="false" />
+                        <ComboBox fx:id="comboBoxSkupinaStObor" layoutX="850.0" layoutY="193.0" prefHeight="25.0" prefWidth="244.0" visible="false" />
+                        <Label layoutX="851.0" layoutY="38.0" text="Id" visible="false" />
+                        <Label layoutX="910.0" layoutY="38.0" text="Název skupiny" visible="false" />
+                        <Label layoutX="973.0" layoutY="96.0" text="Předmět" visible="false" />
+                        <Label layoutX="850.0" layoutY="116.0" text="Studijní plán" visible="false" />
+                        <Label layoutX="851.0" layoutY="176.0" text="Studijní obor" visible="false" />
+                        <Button fx:id="buttonSkupinaPridej" layoutX="848.0" layoutY="156.0" mnemonicParsing="false" onAction="#PridejSkupinu" text="Přidej skupinu" visible="false" />
+                        <Button fx:id="buttonSkupinaUprav" layoutX="956.0" layoutY="156.0" mnemonicParsing="false" onAction="#UpravSkupinu" prefHeight="25.0" prefWidth="62.0" text="Uprav" visible="false" />
+                        <Button fx:id="buttonSkupinaSmaz" layoutX="1032.0" layoutY="156.0" mnemonicParsing="false" onAction="#SmazSkupinu" text="Odeber" visible="false" />
+                        <Button fx:id="buttonKomentarOdpoved" layoutX="877.0" layoutY="466.0" mnemonicParsing="false" onAction="#OdpovedNaKomentar" text="Odpověz na vybraný komentář" AnchorPane.bottomAnchor="194.0" AnchorPane.rightAnchor="60.0" />
+                        <TextField fx:id="textFieldKomentarId" editable="false" layoutX="846.0" layoutY="365.0" prefHeight="25.0" prefWidth="28.0" visible="false" />
+                        <Label layoutX="851.0" layoutY="357.0" text="Komentář" AnchorPane.bottomAnchor="311.0" AnchorPane.rightAnchor="213.0" />
+                        <TextField fx:id="textFieldPomocneKomentare" editable="false" layoutX="878.0" layoutY="331.0" visible="false" />
+                        <Button fx:id="buttonKomentarUprav" layoutX="965.0" layoutY="424.0" mnemonicParsing="false" onAction="#UpravKomentar" text="Uprav" AnchorPane.bottomAnchor="236.0" AnchorPane.rightAnchor="103.0" />
+                        <Button fx:id="buttonKomentarOdeber" layoutX="1030.0" layoutY="424.0" mnemonicParsing="false" onAction="#OdeberKomentar" text="Odeber" AnchorPane.bottomAnchor="236.0" AnchorPane.rightAnchor="30.0" />
+                        <Label layoutX="851.0" layoutY="578.0" text="Druh like" AnchorPane.bottomAnchor="90.0" AnchorPane.rightAnchor="217.0" />
+                        <TextField fx:id="textFieldLajkyId" layoutX="835.0" layoutY="602.0" prefHeight="25.0" prefWidth="33.0" visible="false" />
+                        <Button fx:id="buttonLajkUprav" layoutX="949.0" layoutY="643.0" mnemonicParsing="false" onAction="#UpravLajk" text="Uprav" AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="119.0" />
+                        <Button fx:id="buttonLajkOdeber" layoutX="1032.0" layoutY="643.0" mnemonicParsing="false" onAction="#OdeberLajk" text="Odeber" AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="28.0" />
+                        <TextField fx:id="textFieldStudijniPlanPom" layoutX="876.0" layoutY="225.0" visible="false" />
+                        <Label layoutX="522.0" layoutY="3.0" text="Skupina" AnchorPane.leftAnchor="522.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="353.0" layoutY="304.0" text="Komentáře na skupině">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="367.0" layoutY="527.0" text="Like na komentáři" AnchorPane.bottomAnchor="131.0" AnchorPane.leftAnchor="367.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Kamaradi">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableViewKamaradi" layoutY="29.0" prefHeight="656.0" prefWidth="228.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="29.0">
+                          <columns>
+                            <TableColumn fx:id="colKamaradId" prefWidth="32.5" text="ID" />
+                            <TableColumn fx:id="colKamaradJmeno" prefWidth="84.5" text="Jméno" />
+                              <TableColumn fx:id="colKamaradPrijmeni" prefWidth="110.0" text="Příjmení" />
+                          </columns>
+                        </TableView>
+                        <TableView fx:id="tableViewZpravy" layoutX="291.0" layoutY="29.0" prefHeight="524.0" prefWidth="823.0" AnchorPane.bottomAnchor="132.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="29.0">
+                          <columns>
+                            <TableColumn fx:id="ColZpravyId" prefWidth="30.0" text="ID" />
+                            <TableColumn fx:id="colZpravyCas" prefWidth="195.0" text="Čas" />
+                              <TableColumn fx:id="colZpravyOdesilatel" prefWidth="115.0" text="Odesílatel" />
+                              <TableColumn fx:id="colZpravyAdresat" prefWidth="98.0" text="Adresát" />
+                              <TableColumn fx:id="colZpravyObsah" prefWidth="374.0" text="Obsah" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="textFieldObsah" layoutX="292.0" layoutY="587.0" prefHeight="25.0" prefWidth="826.0" AnchorPane.bottomAnchor="73.0" AnchorPane.rightAnchor="0.0" />
+                        <Label layoutX="292.0" layoutY="570.0" text="Zpráva" AnchorPane.bottomAnchor="98.0" AnchorPane.rightAnchor="787.0" />
+                        <Button fx:id="buttonZpravaOdeslat" layoutX="619.0" layoutY="626.0" mnemonicParsing="false" onAction="#OdeslatZpravu" prefHeight="25.0" prefWidth="161.0" text="Odeslat" AnchorPane.bottomAnchor="34.0" AnchorPane.rightAnchor="336.0" />
+                        <Button fx:id="buttonOdebratKamarada" layoutX="234.0" layoutY="651.0" mnemonicParsing="false" onAction="#OdeberKamarada" text="Odebrat kamaráda" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="234.0" />
+                        <TextField fx:id="textFieldZpravaId" layoutX="272.0" layoutY="526.0" prefHeight="25.0" prefWidth="35.0" visible="false" />
+                        <Label layoutX="45.0" layoutY="1.0" text="Moji kamradádi" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="1.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="625.0" layoutY="1.0" text="Chat s kamarádem" AnchorPane.rightAnchor="343.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Uživatelé">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableViewUzivatele" layoutY="68.0" prefHeight="517.0" prefWidth="1116.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="68.0">
+                          <columns>
+                            <TableColumn fx:id="colUzivateleId" prefWidth="47.0" text="ID" />
+                            <TableColumn fx:id="colUzivateleJmeno" prefWidth="142.0" text="Jméno" />
+                              <TableColumn fx:id="colUzivatelePrijmeni" prefWidth="143.0" text="Příjmení" />
+                              <TableColumn fx:id="colUzivateleEmail" prefWidth="284.0" text="Email" />
+                              <TableColumn fx:id="colUzivateleTelefon" prefWidth="139.0" text="Telefon" />
+                              <TableColumn fx:id="colUzivateleRocnik" prefWidth="93.0" text="Ročník" />
+                              <TableColumn fx:id="colUzivateleFakulta" prefWidth="140.0" text="Fakulta" />
+                              <TableColumn fx:id="colUzivatelePracoviste" prefWidth="127.0" text="Pracoviště" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="buttonUzivatelePridej" layoutX="507.0" layoutY="598.0" mnemonicParsing="false" onAction="#PridejKamarada" text="Přidej kamaráda" AnchorPane.bottomAnchor="62.0" AnchorPane.leftAnchor="507.0" AnchorPane.rightAnchor="507.0" />
+                        <TextField fx:id="textFieldUzivatelPridejId" layoutX="169.0" layoutY="350.0" visible="false" />
+                        <TextField fx:id="textFieldHledej" layoutX="90.0" layoutY="14.0" onKeyReleased="#HledejUzivatele" prefHeight="25.0" prefWidth="344.0" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="14.0" />
+                        <Label layoutX="14.0" layoutY="18.0" text="Vyhledávání:" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="18.0" />
+                        <Label layoutX="474.0" layoutY="35.0" text="Uživatelé sociální sítě" AnchorPane.leftAnchor="474.0" AnchorPane.rightAnchor="473.0" AnchorPane.topAnchor="35.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Předměty">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableViuewPredmety" layoutY="58.0" prefHeight="497.0" prefWidth="1116.0">
+                          <columns>
+                            <TableColumn fx:id="colPredmetyId" prefWidth="34.0" text="ID" />
+                            <TableColumn fx:id="colPredmetyNazev" prefWidth="226.0" text="Název předmětu" />
+                              <TableColumn fx:id="colPredmetyZkratka" prefWidth="99.0" text="Zkratka" />
+                              <TableColumn fx:id="colPredmetyNazevSkupiny" prefWidth="230.0" text="Název skupiny" />
+                              <TableColumn fx:id="colPredmetyStObor" prefWidth="239.0" text="Studijní obor" />
+                              <TableColumn fx:id="colPredmetyStPlan" prefWidth="282.0" text="Studijní plán" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="532.0" layoutY="27.0" text="Předměty">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldPredmetyNazev" layoutX="34.0" layoutY="583.0" />
+                        <Label layoutX="34.0" layoutY="566.0" text="Nová skupina - název" />
+                        <Button fx:id="buttonPredmetyPridatSkupinu" layoutX="34.0" layoutY="620.0" mnemonicParsing="false" onAction="#PridejSkupinu" text="Vytvořit skupinu" />
+                        <Button fx:id="buttonPredmetUpravitSKupinu" layoutX="545.0" layoutY="621.0" mnemonicParsing="false" onAction="#UpravSkupinu" prefHeight="25.0" prefWidth="64.0" text="Upravit" />
+                        <Button fx:id="buttonSMazatSkupinu" layoutX="627.0" layoutY="621.0" mnemonicParsing="false" onAction="#SmazSkupinu" text="Smazat" />
+                        <TextField fx:id="textFieldPredmetyVyhledavani" layoutX="91.0" layoutY="13.0" onKeyReleased="#HledejPredmet" prefHeight="25.0" prefWidth="358.0" />
+                        <Label layoutX="14.0" layoutY="17.0" text="Vyhledávání:" />
+                        <TextField fx:id="textFieldPredmetyIdSkupiny" layoutX="34.0" layoutY="519.0" prefHeight="25.0" prefWidth="46.0" visible="false" />
+                        <ComboBox fx:id="comboBoxSkupinyBezPredmetu" layoutX="496.0" layoutY="581.0" prefWidth="150.0" />
+                        <Label layoutX="496.0" layoutY="561.0" text="Skupiny bez předmětů" />
+                        <Button fx:id="buttonPredmetyPriradit" layoutX="433.0" layoutY="620.0" mnemonicParsing="false" onAction="#PriraditSkupinu" text="Přiřadit skupinu" />
+                        <ComboBox fx:id="comboBoxSkupinyRole" layoutX="663.0" layoutY="583.0" prefWidth="150.0" />
+                        <Label layoutX="668.0" layoutY="561.0" text="Role na předmětu" />
+                        <TextField fx:id="textFieldPredmetyIdStPl" layoutX="903.0" layoutY="569.0" visible="false" />
+                        <TextField fx:id="textFieldPredmetyIdStOb" layoutX="910.0" layoutY="620.0" visible="false" />
+                        <Button fx:id="buttonZapsatSeDoSKupiny" layoutX="704.0" layoutY="621.0" mnemonicParsing="false" onAction="#ZapsatSeDoSkupiny" text="Zapsat se do skupiny" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Nastavení">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="494.0" layoutY="31.0" text="Vaše osobní údaje:" AnchorPane.leftAnchor="494.0" AnchorPane.topAnchor="31.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldJmeno" editable="false" layoutX="536.0" layoutY="68.0" AnchorPane.leftAnchor="530.0" AnchorPane.topAnchor="68.0" />
+                        <TextField fx:id="textFieldPrijmeni" editable="false" layoutX="536.0" layoutY="107.0" AnchorPane.leftAnchor="530.0" AnchorPane.topAnchor="107.0" />
+                        <TextField fx:id="textFieldEmail" editable="false" layoutX="536.0" layoutY="146.0" AnchorPane.leftAnchor="530.0" AnchorPane.topAnchor="146.0" />
+                        <TextField fx:id="textFieldHeslo" editable="false" layoutX="536.0" layoutY="188.0" AnchorPane.leftAnchor="530.0" AnchorPane.topAnchor="188.0" />
+                        <TextField fx:id="textFieldRocnik" editable="false" layoutX="536.0" layoutY="235.0" AnchorPane.leftAnchor="530.0" AnchorPane.topAnchor="235.0" />
+                        <TextField fx:id="textFieldPracoviste" editable="false" layoutX="536.0" layoutY="278.0" AnchorPane.leftAnchor="530.0" AnchorPane.topAnchor="278.0" />
+                        <TextField fx:id="textFieldFakulta" editable="false" layoutX="536.0" layoutY="323.0" AnchorPane.leftAnchor="530.0" AnchorPane.topAnchor="323.0" />
+                        <TextField fx:id="textFieldTelefon" editable="false" layoutX="536.0" layoutY="369.0" AnchorPane.leftAnchor="530.0" AnchorPane.topAnchor="369.0" />
+                        <Label layoutX="452.0" layoutY="72.0" text="Jméno:" AnchorPane.leftAnchor="452.0" AnchorPane.topAnchor="72.0" />
+                        <Label layoutX="457.0" layoutY="111.0" text="Příjmení:" AnchorPane.leftAnchor="452.0" AnchorPane.topAnchor="111.0" />
+                        <Label layoutX="452.0" layoutY="150.0" text="E-mail:" AnchorPane.leftAnchor="452.0" AnchorPane.topAnchor="150.0" />
+                        <Label layoutX="457.0" layoutY="192.0" text="Heslo:" AnchorPane.leftAnchor="452.0" AnchorPane.topAnchor="192.0" />
+                        <Label layoutX="452.0" layoutY="239.0" text="Ročník studia:" AnchorPane.leftAnchor="452.0" AnchorPane.topAnchor="239.0" />
+                        <Label layoutX="452.0" layoutY="282.0" text="Pracoviště:" AnchorPane.leftAnchor="452.0" AnchorPane.topAnchor="282.0" />
+                        <Label layoutX="457.0" layoutY="327.0" text="Fakulta:" AnchorPane.leftAnchor="452.0" AnchorPane.topAnchor="327.0" />
+                        <Label layoutX="460.0" layoutY="373.0" text="Telefon:" AnchorPane.leftAnchor="452.0" AnchorPane.topAnchor="373.0" />
+                        <Button fx:id="buttonUlozitUdaje" layoutX="565.0" layoutY="416.0" mnemonicParsing="false" onAction="#UlozNoveUdaje" prefHeight="25.0" prefWidth="97.0" text="Ulozit" AnchorPane.leftAnchor="565.0" AnchorPane.topAnchor="416.0" />
+                        <Button fx:id="buttonEditovatUdaje" layoutX="455.0" layoutY="416.0" mnemonicParsing="false" onAction="#EditujUdaje" prefHeight="25.0" prefWidth="96.0" text="Editovat" AnchorPane.leftAnchor="455.0" AnchorPane.topAnchor="416.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button fx:id="buttonOdhlasit" layoutX="1041.0" layoutY="1.0" mnemonicParsing="false" onAction="#Odhlasit" text="Odhlásit se" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0" />
+    </children>
+</AnchorPane>

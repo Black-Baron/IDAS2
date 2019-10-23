@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3979B2D3-38BC-011A-257F-921460175B27" name="KATEGORIE">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 16:17:41 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="150C4047-F19C-CA6D-830C-F50B5E9E0802">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 16:17:48 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NAZEV" id="555D4205-5ADE-458F-C38D-80C6CB0B1846">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 16:17:57 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="EAF7F0C3-069A-8311-A02C-16FC220DB4F5">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 16:20:59 UTC</createdTime>
+<generatorID>1A79DF8F-875F-779D-10F8-D6A77FF9BA25</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<referedAttribute>82FBCB04-71D8-CD9E-4D34-E3031D4FA682</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7E7D50F0-D548-876D-71E5-E563DAB32724" name="KATEGORIE PK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 16:19:13 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>150C4047-F19C-CA6D-830C-F50B5E9E0802</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3C7F7610-361A-DC9E-36ED-EFAD5CF8AA01" name="PREDMETY_PLANU">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 14:49:48 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="1ACD6484-B26E-A08F-4500-2BFF100DE1FE">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 14:50:28 UTC</createdTime>
+<generatorID>A08CAAB8-7CB9-B398-A480-82A33A875DC7</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<referedAttribute>FC862A2B-2794-BFE9-1049-CEF8C1C69FE1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="3B684FE6-C8BA-0C64-1396-2DF9E17D65E2">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 14:56:00 UTC</createdTime>
+<generatorID>8661A2CD-FB2B-567C-D627-E2635B0218C5</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<referedAttribute>8262D7BC-5EF7-CC21-6CDB-74EA74537C8F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID2" id="4F20F52D-4826-93B6-9EE9-D72A106CE8DB">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:46:26 UTC</createdTime>
+<generatorID>3EE2004E-E5D3-37FB-D18A-1D3ADBBB4299</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<referedAttribute>C70622E9-2728-8FA1-2F8C-FF69B0144A2C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="70D7FB75-6B3C-6E79-FE07-0E07D65A975B" name="PREDMETY_PLANU PK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 14:50:13 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
+</Entity>

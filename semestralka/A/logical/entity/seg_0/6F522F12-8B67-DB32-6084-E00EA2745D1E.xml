@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6F522F12-8B67-DB32-6084-E00EA2745D1E" name="ZPRAVY_S_KAMARADY">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 14:57:57 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="BA0EB3CF-D0DE-3FD4-04B5-AE9FA26CF8E6">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:50:03 UTC</createdTime>
+<generatorID>D5FD2666-B9C6-F26A-BAAC-DD3192A37B36</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<referedAttribute>A7FA6B7E-8CAA-3C56-6F12-FC8C9A195014</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID1" id="36A792B2-C5B3-8CF1-195A-FA3EF78F86B2">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:50:14 UTC</createdTime>
+<generatorID>73D55B2C-DF06-75CC-A51F-15D3CC24FF28</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<referedAttribute>9E9595F3-7207-51A4-4883-D311B03B96BF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3228F174-7B4E-CE80-DCD8-EF7121FFC632" name="ZPRAVY_S_KAMARADY PK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:29:05 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<engineerTo>
+<item key="7F06E173-1C67-3EC5-7499-3674BA1BE754" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
+</Entity>

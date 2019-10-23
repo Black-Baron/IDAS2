@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F0DE05CB-98F3-5B78-2C15-3E3A60683241" name="ROLE_UZIVATELE">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 12:57:05 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_UZIVATELE" id="7E81F1B8-7DE4-F93E-CEC8-9B5896F66BAE">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 12:58:38 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="871F2296-A0CD-CE7D-BC0A-7A5AB35D954B" referredColumn="B3CC5444-86DC-D5F9-C7D7-2CBD803534A7"/>
+</associations>
+</Column>
+<Column name="ID_ROLE" id="119B590E-E639-BAFA-73E2-1246E03A3413">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 13:01:21 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4ADB8C67-CB54-0074-392C-99D0F0630FC9" referredColumn="3B923AA3-97A6-CCCC-5BC7-B256D842897F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="597571AA-73BA-C2A4-311C-8804D36B09F5" name="ROLE_UZIVATELE_PK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 12:57:56 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E81F1B8-7DE4-F93E-CEC8-9B5896F66BAE"/>
+<colUsage columnID="119B590E-E639-BAFA-73E2-1246E03A3413"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D82E564D-9F17-52F6-40D9-9811C3B6BD6F" name="ROLE_UZIVATELE_ROLE_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 13:02:03 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="119B590E-E639-BAFA-73E2-1246E03A3413"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3E40377-3C10-B4C9-F5F9-F2D693789B89" name="ROLE_UZIVATELE_UZIVATELE_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 13:02:06 UTC</createdTime>
+<generatorID>56AF6E97-094B-D4FB-FBEA-7B458A492A5E</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E81F1B8-7DE4-F93E-CEC8-9B5896F66BAE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

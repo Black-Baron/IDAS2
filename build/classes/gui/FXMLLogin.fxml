@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.181" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.FXMLLoginController">
+   <children>
+      <TabPane prefHeight="403.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Přihlášení">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="208.0" layoutY="29.0" text="Přihlašte se">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="162.0" layoutY="99.0" text="Login:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="162.0" layoutY="155.0" text="Heslo:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="textFieldLogin" layoutX="247.0" layoutY="100.0" text="st49636@student.upce.cz" />
+                        <PasswordField fx:id="passwordFieldHeslo" layoutX="248.0" layoutY="156.0" text="a" />
+                        <Button fx:id="buttonPrihlasit" layoutX="202.0" layoutY="220.0" mnemonicParsing="false" onAction="#Prihlasit" prefHeight="27.0" prefWidth="150.0" text="Přihlásit" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Registrace">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="textFieldJmeno" layoutX="125.0" layoutY="50.0" />
+                        <TextField fx:id="textFiledPrijmeni" layoutX="125.0" layoutY="85.0" />
+                        <TextField fx:id="textFieldEmail" layoutX="384.0" layoutY="50.0" />
+                        <TextField fx:id="textFieldHeslo" layoutX="385.0" layoutY="85.0" />
+                        <TextField fx:id="textFieldPracoviste" layoutX="197.0" layoutY="133.0" />
+                        <TextField fx:id="textFieldFakulta" layoutX="197.0" layoutY="171.0" />
+                        <TextField fx:id="textFieldTelefon" layoutX="197.0" layoutY="211.0" />
+                        <TextField fx:id="textFieldRok" layoutX="197.0" layoutY="253.0" />
+                        <Button fx:id="buttonRegistrovat" layoutX="234.0" layoutY="310.0" mnemonicParsing="false" onAction="#Registrovat" prefHeight="25.0" prefWidth="133.0" text="Zaregistrovat se" />
+                        <Label layoutX="200.0" layoutY="-3.0" text="Zaregistrujte se">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="44.0" layoutY="49.0" text="Jméno:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="300.0" layoutY="84.0" text="Heslo:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="38.0" layoutY="84.0" text="Příjmení:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="309.0" layoutY="49.0" text="E-mail:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="100.0" layoutY="132.0" text="Pracoviště:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="103.0" layoutY="170.0" text="Fakulta:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="102.0" layoutY="210.0" text="Telefon:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="103.0" layoutY="252.0" text="Rok studia:">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="355.0" layoutY="137.0" text="Nepovinné" />
+                        <Label layoutX="355.0" layoutY="177.0" text="Nepovinné" />
+                        <Label layoutX="356.0" layoutY="215.0" text="Nepovinné" />
+                        <Label layoutX="356.0" layoutY="257.0" text="Nepovinné" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

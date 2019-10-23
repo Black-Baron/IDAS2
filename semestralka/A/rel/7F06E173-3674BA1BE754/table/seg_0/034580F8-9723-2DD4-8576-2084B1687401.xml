@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="034580F8-9723-2DD4-8576-2084B1687401" name="PREDMETY_PLANU">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>3C7F7610-361A-DC9E-36ED-EFAD5CF8AA01</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PREDMETY" id="411D5271-3DFC-38EA-034B-8EFA65E4A082">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>1ACD6484-B26E-A08F-4500-2BFF100DE1FE</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<structuredType>47E390DE-0671-C4B1-8428-0F45CBEE18F8</structuredType>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A7577320-BEF1-9D1A-121C-6C83CA267D66" referredColumn="EBD5860E-0354-6B15-5A93-A0C70DB8DD4E"/>
+</associations>
+</Column>
+<Column name="ID_STUDIJNI_PLANY" id="DFFB7C6C-4640-2229-6E09-8F9CA242D7F8">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>4F20F52D-4826-93B6-9EE9-D72A106CE8DB</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AFB111FA-CDD5-916D-66BA-976602B09394" referredColumn="FCA1372D-4556-82E8-21C3-6BD1BB5AB088"/>
+</associations>
+</Column>
+<Column name="ID_SKUPINY" id="92840608-A23C-CC9A-A204-BD8D246D804C">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>3B684FE6-C8BA-0C64-1396-2DF9E17D65E2</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD9121FB-4D27-1D55-5253-888352BCAEAA" referredColumn="9304EEAE-8491-8C10-FD0B-860D12A2C9F0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BEE21A04-DCAA-39DB-CB31-ACBAF415E7D8" name="PREDMETY_PLANU_PK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>70D7FB75-6B3C-6E79-FE07-0E07D65A975B</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="411D5271-3DFC-38EA-034B-8EFA65E4A082"/>
+<colUsage columnID="DFFB7C6C-4640-2229-6E09-8F9CA242D7F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="56C963B4-A480-232E-1BD8-7DFAD2D6AE6F" name="PREDMETY_PLANU_STUDIJNI_PLANY_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>3EE2004E-E5D3-37FB-D18A-1D3ADBBB4299</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFFB7C6C-4640-2229-6E09-8F9CA242D7F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="335B138D-6505-747C-F60E-4E34B27FD912" name="PREDMETY_PLANU_PREDMETY_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>A08CAAB8-7CB9-B398-A480-82A33A875DC7</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="411D5271-3DFC-38EA-034B-8EFA65E4A082"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48C4CEA4-BCB4-7DD0-B49E-7FA70D605FB1" name="PREDMETY_PLANU_SKUPINY_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 15:52:13 UTC</createdTime>
+<generatorID>8661A2CD-FB2B-567C-D627-E2635B0218C5</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="92840608-A23C-CC9A-A204-BD8D246D804C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4ADB8C67-CB54-0074-392C-99D0F0630FC9" containerWithKeyObject="F0DE05CB-98F3-5B78-2C15-3E3A60683241" localFKIndex="D82E564D-9F17-52F6-40D9-9811C3B6BD6F" name="ROLE_UZIVATELE_ROLE_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-16 13:02:03 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<referredTableLongName>ROLE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>19076A2E-F25E-376A-D472-D4FFCA9F6247</referredTableID>
+<keyObject>2496098B-BFF1-F7DB-888E-1A4070C46C9E</keyObject>
+<referredKeyID>2496098B-BFF1-F7DB-888E-1A4070C46C9E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

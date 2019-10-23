@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C2A42A5C-A9E1-FEA3-E351-3E99ECECC9EA" name="SKUPINY_UZIVATELE">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 16:19:21 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_UZIVATELE" id="99C89362-204F-3752-B4B8-9DE952AD182D">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 16:19:43 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D79FE442-EDEE-AC51-0414-EC3432A90ECB" referredColumn="B3CC5444-86DC-D5F9-C7D7-2CBD803534A7"/>
+</associations>
+</Column>
+<Column name="ID_SKUPINY" id="66CC74FD-E33D-463D-D0DE-A7ABC9D9D367">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 16:19:51 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A30B0D2-278C-068C-0F92-F43C9DE66D34" referredColumn="9304EEAE-8491-8C10-FD0B-860D12A2C9F0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D5D21091-098F-4535-4336-834FE8C1FE5A" name="SKUPINY_UZIVATELE_PK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 16:21:48 UTC</createdTime>
+<ownerDesignName>A</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99C89362-204F-3752-B4B8-9DE952AD182D"/>
+<colUsage columnID="66CC74FD-E33D-463D-D0DE-A7ABC9D9D367"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5115004B-DF53-BCBE-371C-7E0491D16A93" name="SKUPINY_UZIVATELE_UZIVATELE_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 16:19:43 UTC</createdTime>
+<generatorID>56AF6E97-094B-D4FB-FBEA-7B458A492A5E</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99C89362-204F-3752-B4B8-9DE952AD182D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="615EEFF6-C477-3548-12A0-9A2469D3A8B7" name="SKUPINY_UZIVATELE_SKUPINY_FK">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-04-08 16:19:51 UTC</createdTime>
+<generatorID>29AC24E6-583C-B71F-CA28-B501D95D1EA5</generatorID>
+<ownerDesignName>A</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66CC74FD-E33D-463D-D0DE-A7ABC9D9D367"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

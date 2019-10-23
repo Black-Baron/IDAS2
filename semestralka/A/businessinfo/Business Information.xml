@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="1DCE2E2A-7B0B-D5BE-AAAE-7BFF3ABD317A">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-03-25 13:10:21 UTC</createdTime>
+<ownerDesignName>Semestralka_logicky_model</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

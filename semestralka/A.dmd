@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="A" id="EA043B60-31A6-75B0-33E3-5A99870540AE" version="3.5">
+<createdBy>qwasyx0-ntb</createdBy>
+<createdTime>2019-03-25 13:10:20 UTC</createdTime>
+<ownerDesignName>Semestralka_logicky_model</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>EA043B60-31A6-75B0-33E3-5A99870540AE</designId>
+</OSDM_Design>
