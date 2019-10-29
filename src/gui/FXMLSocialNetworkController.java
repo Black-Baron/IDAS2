@@ -278,6 +278,50 @@ public class FXMLSocialNetworkController implements Initializable {
         alert.setContentText(exception);
         alert.showAndWait();
     }
+    
+    //TODO: Vetsina prace s formulářem je tady
+    //Je potreba upravit tak, aby byl splněn bod 9. zadání:
+    
+    /*9. Aplikace bude využívat minimálně 3 plnohodnotné formuláře
+    (např. ošetření vstupních polí, apod.) pro vytváření nebo modifikaci
+    dat v tabulkách, ostatní potřebné formuláře jsou samozřejmostí. 
+    TODO: Tak to asi budeme muset překopat tu aplikaci tak, že např.
+    poklikáním na řádek bude možnost přepisu údajů apod, 
+    tedy bude tam menší množství tlačítek a funkčnost se 
+    spíš přesune na myš a kód (ošetření vstupu)*/
+    
+    //Tedy jak mam napr. u Skupin, komentaru a lajku vedle tabulek 
+    //tlacitka a textfieldy tak to chce asi samostatny formular (pise min 3)
+    //tak myslim ze jeden bude dobry v tomhle, dalsi u predmetu - jeden pro
+    //vytvoreni nazvu skupiny - dle predmetu, nejakou nabidku, neco jako vyberes
+    //predmet a navrhne ti to nazev (predmet.getJmeno() + " - skupina", chapes princip)
+    //treti napr prirazeni techto vytvorenych nazvu skupin k predmetum, tedy tlacitka
+    // co jsou pod tabulkou tak do samostatného a myslím ze by mohlo byt hotovo
+    
+    //Pozn. je treba osetrit vstupni pole, vlastne kdekoliv se bere 
+    //nejaky textfiedl.getText(); ktery neni pomocny (neviditelny/skryty)
+    //napr. je to textFieldPredmetyIdSkupiny - za tabulkou skryty, z neho
+    //beru a ukladam si tam id vybraneho, jednoduche a nesikovne...
+    //ale myslim ze moje pojmenovavani je celkem konzistentni, takze textfield
+    //co ma v nazvu "Id" by mel byt ten skryty (ID by se nemela nikdy ukazovat uzivateli)
+            
+    //Editace tabulek by asi taky byla dobra funkce, takze napr. nakliknu si tabulku
+    // nejaky radek a vyjede mi mi formular pro editaci, u smazání alert "Urcite chcete..."
+    // nove vkladani samsotatny formular viz vyse ale neni podle me potreba u vsech
+    //např. chat s kamaradem je podle me lepsi pro uzivatele rovnou v app a 
+    //ne samostatne. Tedy rozhodovani zda samostatny nebo ne asi dle slozitosti
+    //a/nebo nutnosti oddelenosti od zbytku.
+    
+    //Nutno brát v potaz bod 7.:
+    /*7. Databázová aplikace umožňuje přidávat, modifikovat a mazat záznamy ve
+    všech tabulkách minimálně pro roli administrátor. */
+    // -- musim nejdriv tabulky udelat
+    //udelame pro roli admin a uzivatel-vyucujici pro predmety kde je vyucujici
+    // a mozna jeste neco vymyslime
+    
+    //Jednotný komentář pro celou aplikaci:
+    //TODO: bud vymyslet jak psat komentare nebo pouzit nejakou normu treba od divise
+    //jeste upresnim, okomentuju zbytek kodu 
 //--------------------------------------SKUPINY---------------------------------
 
     private void nactiSkupiny() throws SQLException {

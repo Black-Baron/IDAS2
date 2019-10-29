@@ -29,6 +29,7 @@ public class Controller {
         }
         return false;
     }
+    //TODO: vsechny nove dotazy hnat pres kontroller, zkusit na tohle:
     public void pridejKomentarNaSkupinu(Skupina skupina, String obsah) throws SQLException {
       //  dh.pridejKomentar(skupina, obsah);
     }

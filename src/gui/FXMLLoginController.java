@@ -77,6 +77,7 @@ public class FXMLLoginController implements Initializable {
                         if (!dh.controllDB()) {
             dh.createScript();
           //  dh.insertScript();
+          //TODO: upravit pro nove udaje, bude i import xml
             }
             login = dh.prihlaseniUzivatele(textFieldLogin.getText(), passwordFieldHeslo.getText());
             uzivatel = textFieldLogin.getText();
