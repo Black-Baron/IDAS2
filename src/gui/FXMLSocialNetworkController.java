@@ -290,17 +290,34 @@ public class FXMLSocialNetworkController implements Initializable {
     tedy bude tam menší množství tlačítek a funkčnost se 
     spíš přesune na myš a kód (ošetření vstupu)*/
     
-    //Tedy jak mam napr. u Skupin, komentaru a lajku vedle tabulek 
+    //Tedy jak mam v gui napr. u Skupin, komentaru a lajku vedle tabulek 
     //tlacitka a textfieldy tak to chce asi samostatny formular (pise min 3)
     //tak myslim ze jeden bude dobry v tomhle, dalsi u predmetu - jeden pro
     //vytvoreni nazvu skupiny - dle predmetu, nejakou nabidku, neco jako vyberes
-    //predmet a navrhne ti to nazev (predmet.getJmeno() + " - skupina", chapes princip)
+    //predmet a navrhne ti to nazev (predmet.getJmeno() + " - skupina", nebo neco takoveho)
     //treti napr prirazeni techto vytvorenych nazvu skupin k predmetum, tedy tlacitka
     // co jsou pod tabulkou tak do samostatného a myslím ze by mohlo byt hotovo
     
+        //Nutno brát v potaz bod 7.:
+    /*7. Databázová aplikace umožňuje přidávat, modifikovat a mazat záznamy ve
+    všech tabulkách minimálně pro roli administrátor. */
+    // TODO: musim nejdriv tabulky udelat ale mam tento napad:
+    //nová tabulka role_uzivatele - v uzivatele se prida foreign key a bude ukazovat
+    //u kazdeho uzivatele bud 1 nebo 0 - 0 bezny, 1 - admin. takze vsude kde bude 
+    //nejaka uprava/mazani udelas neco jako uzivatel.getRoleUzivatele (return 0/1) 
+    //a kdyz bude 1 tak mazani bude mozne kdyz 0 alert ze nejsi admin... nebo to
+    // proste nebude viditelne? jak budes chtit. 
+    
+    //Druha zmena bude role na role_na_skupine a nova tabulka opravneni_na_skupine
+    //budou to jen ciselniky a zase se jen budeme ptat na foreign key jaky je
+    //napr uzivatel bude jako vyucujici na skupine a tim padem bude mit v role_na_skupine
+    //zapis vyucujici a foreign key bude na opravneni_na_skupine - zde toho muzem dat docela dost
+    //jako treba opravneni_upravovat_prispevky ale ne uz mazat apod tady si muzem vyhrat, 
+    //zatim to nech ja to vymyslim a pak se dohodnem
+    
     //Pozn. je treba osetrit vstupni pole, vlastne kdekoliv se bere 
-    //nejaky textfiedl.getText(); ktery neni pomocny (neviditelny/skryty)
-    //napr. je to textFieldPredmetyIdSkupiny - za tabulkou skryty, z neho
+    //nejaky textfiedl.getText(); ktery neni pomocny (neviditelny/skryty, coz je
+    //napr.textFieldPredmetyIdSkupiny - za tabulkou skryty, z neho
     //beru a ukladam si tam id vybraneho, jednoduche a nesikovne...
     //ale myslim ze moje pojmenovavani je celkem konzistentni, takze textfield
     //co ma v nazvu "Id" by mel byt ten skryty (ID by se nemela nikdy ukazovat uzivateli)
@@ -312,16 +329,9 @@ public class FXMLSocialNetworkController implements Initializable {
     //ne samostatne. Tedy rozhodovani zda samostatny nebo ne asi dle slozitosti
     //a/nebo nutnosti oddelenosti od zbytku.
     
-    //Nutno brát v potaz bod 7.:
-    /*7. Databázová aplikace umožňuje přidávat, modifikovat a mazat záznamy ve
-    všech tabulkách minimálně pro roli administrátor. */
-    // -- musim nejdriv tabulky udelat
-    //udelame pro roli admin a uzivatel-vyucujici pro predmety kde je vyucujici
-    // a mozna jeste neco vymyslime
-    
     //Jednotný komentář pro celou aplikaci:
     //TODO: bud vymyslet jak psat komentare nebo pouzit nejakou normu treba od divise
-    //jeste upresnim, okomentuju zbytek kodu 
+    //jeste upresnim, okomentuju zbytek kodu abys taky mel vetsi prehled.
 //--------------------------------------SKUPINY---------------------------------
 
     private void nactiSkupiny() throws SQLException {
